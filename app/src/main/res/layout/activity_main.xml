@@ -6,22 +6,25 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    
+
+<!--    android:textStyle="bold|italic" estiliza o texto -->
+
+<!--    android:textAllCaps="true" o texto fica Capslockado -->
+
+<!--    android:fontFamily="monospace" muda a fonte
+        Na seção Design é possivel baixar fontes também -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
-        android:padding="16dp"
-        android:text="testing"
-        android:textColor="#eee"
-        android:textSize="24sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
         android:layout_margin="16dp"
-        android:background="#9F9F9F" />
-
+        android:background="@color/purple_500"
+        android:fontFamily="monospace"
+        android:padding="16dp"
+        android:text="@string/testing"
+        android:textAllCaps="false"
+        android:textColor="#eee"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>
