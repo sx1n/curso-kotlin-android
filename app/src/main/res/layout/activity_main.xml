@@ -6,25 +6,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!--    android:hint="Nome" Funciona como um placeholder -->
+<!--    android:inputType="text" Define o tipo do Input -->
 
-<!--    android:textStyle="bold|italic" estiliza o texto -->
-
-<!--    android:textAllCaps="true" o texto fica Capslockado -->
-
-<!--    android:fontFamily="monospace" muda a fonte
-        Na seção Design é possivel baixar fontes também -->
-
-    <TextView
-        android:layout_width="wrap_content"
+<!--    É um campo em que você pode digitar algo, um Input-->
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@color/purple_500"
-        android:fontFamily="monospace"
-        android:padding="16dp"
-        android:text="@string/testing"
-        android:textAllCaps="false"
-        android:textColor="#eee"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
+        android:hint="Nome"
+        android:inputType="text"/>
 
 </LinearLayout>
