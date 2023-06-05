@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!-- android:gravity="center_horizontal|center_vertical" alinha o elemento -->
 
-<!-- android:layout_width="match_parent" herda o tamanho do elemento pai -->
-<!-- android:layout_width="wrap_content" se ajusta de acordo com o conteudo do elemento -->
-<!-- android:layout_weight divide a tela -->
+<!-- Padding manipula a area interna do elemento -->
+<!-- Margin manipula a area externa do elemento -->
+
+<!-- Prefira usar **android:paddingEnd** e **android:paddingStart**
+     ao invés de Left e Right, os dois ultimos não são dinamicos,
+     então quando estiver usando um idioma que lê
+     da direita para esquerda, use os dois primeiros, eles resolvem
+     esse problema de acessibilidade de forma dinamica-->
+
+<!--  Medidas `sp` são para tamanhos de fonte (Scale Independent Pixels) -->
+<!--  Medidas `dp` são para tamanhos de elementos, margins, paddings, etc
+      (Density Independent Pixels) -->
+
+<!--  Dar preferencia a numeros de base 2 nas medidas
+      ex: 2, 4, 8, 16, 32, 64...-->
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_weight="3"
-        android:layout_height="0dp"
-        android:text="Hello world"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:layout_gravity="center"
+        android:paddingStart="16dp"
+        android:text="testing"
+        android:textColor="#eee"
         android:textSize="24sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:layout_height="0dp"
-        android:text="Hello world"
-        android:textSize="24sp" />
 
 </LinearLayout>
