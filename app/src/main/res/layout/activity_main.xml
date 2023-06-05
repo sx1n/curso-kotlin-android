@@ -6,14 +6,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<!--    android:hint="Nome" Funciona como um placeholder -->
-<!--    android:inputType="text" Define o tipo do Input -->
 
-<!--    É um campo em que você pode digitar algo, um Input-->
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome"
-        android:inputType="text"/>
+<!-- Aceita as mesmas propriedades do TextView-->
+    <Button
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
