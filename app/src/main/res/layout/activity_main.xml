@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:src="@drawable/ic_people"
-        android:layout_width="256dp"
-        android:layout_height="256dp"
-        app:tint="@color/purple_500" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_weight="1"
+            android:text="A"
+            android:textColor="#eee"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:background="@color/purple_700" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_weight="1"
+            android:text="B"
+            android:textColor="#eee"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:background="@color/purple_500" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:text="Text"
+        android:textSize="32sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:text="Text"
+        android:textSize="32sp"
+        android:gravity="center" />
 
 </LinearLayout>
