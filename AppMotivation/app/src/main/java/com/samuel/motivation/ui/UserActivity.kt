@@ -33,7 +33,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun verifyUserName() {
-        val name = SecurityPreferences(this).getString(MotivationConstants.KEYS.USER_NAME)
+        val name = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
         if (name != "") {
             val mainActivity = Intent(this, MainActivity::class.java)
             startActivity(mainActivity)
@@ -45,7 +45,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         val username = binding.editName.text.toString()
 
         if (username != null) {
-            SecurityPreferences(this).storeString(MotivationConstants.KEYS.USER_NAME, username)
+            SecurityPreferences(this).storeString(MotivationConstants.KEY.USER_NAME, username)
 
 
             // Referencia uma Activity

@@ -1,7 +1,7 @@
 package com.samuel.motivation.infra
 
 class MotivationConstants private constructor() {
-    object KEYS {
+    object KEY {
         const val USER_NAME = "USER_NAME"
     }
 
@@ -9,5 +9,11 @@ class MotivationConstants private constructor() {
         const val ALL = 1
         const val HAPPY = 2
         const val SUNNY = 3
+    }
+
+    object LANGUAGE {
+        const val PORTUGUESE = "pt"
+        const val ENGLISH = "en"
+        const val FRENCH = "fr"
     }
 }
